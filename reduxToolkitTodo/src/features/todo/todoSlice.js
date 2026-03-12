@@ -16,7 +16,7 @@ export const todoSlice = createSlice({
     reducers: {
         addTodo: (state, action) => {
             const todo= {
-                id: nanoid,
+                id: nanoid(),
                 text: action.payload
             }
             state.todos.push(todo);
